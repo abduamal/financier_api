@@ -1,7 +1,53 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+Account.destroy_all
+print "Accounts have been reset." if Account.count == 0
+
+# User.destroy_all
+# puts "Users have been reset." if User.count == 0
 #
-# Examples:
+# User.create!(
+#     first_name: "Amal",
+#     middle_initial: "G",
+#     last_name: "Abdu",
+#     email: "amal@email.com",
+#     password: "12345678",
+#     username: "amalgabdu"
+# )
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# User.create!(
+#     first_name: "Njeshe",
+#     middle_initial: "B",
+#     last_name: "Ichi",
+#     email: "ichi@email.com",
+#     password: "12345678",
+#     username: "bbbarci"
+# )
+#
+# puts "#{User.count} Users have been created."
+
+
+Account.create!(
+  user_id: 2,
+  name: "Checking",
+  balance: 7000.54
+)
+Account.create!(
+  user_id: 2,
+  name: "Savings",
+  balance: 35000.00
+)
+Account.create!(
+  user_id: 3,
+  name: "Checking",
+  balance: 313.37
+)
+Account.create!(
+  user_id: 3,
+  name: "Checking",
+  balance: 10.00
+)
+Account.create!(
+  user_id: 1,
+  name: "Savings",
+  balance: 100000000.00
+)
+print "#{Account.count} have been created."
