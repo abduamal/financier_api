@@ -19,6 +19,7 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'awesome_print'
 gem 'faker'
+gem 'active_model_serializers'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
