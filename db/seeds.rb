@@ -48,11 +48,6 @@
 #   name: "Checking",
 #   balance: 10.00
 # )
-# Account.create!(
-#   user_id: 1,
-#   name: "Savings",
-#   balance: 100000000.00
-# )
 # print "#{Account.count} have been created."
 #
 # AccountTransaction.create!(
